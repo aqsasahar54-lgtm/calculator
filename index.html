@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Calculator -->
+    <main class="calculator">
+
+        <!-- Top bar -->
+        <div class="top-bar">
+
+            <div class="brand">
+                <div class="brand-icon">✦</div>
+
+                <div>
+                    <h1>Calculator</h1>
+                    <!-- <span>Liquid Glass</span> -->
+                </div>
+            </div>
+
+            <div class="window-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+
+        <!-- Display -->
+        <div class="display">
+
+            <div class="expression" id="previousDisplay"></div>
+
+            <div class="result" id="currentDisplay">
+                0
+            </div>
+
+        </div>
+
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button class="glass-button utility clear" id="clear">
+                AC
+            </button>
+
+            <button class="glass-button utility" id="delete">
+                ⌫
+            </button>
+
+            <button class="glass-button operator" data-operation="÷">
+                ÷
+            </button>
+
+            <button class="glass-button operator" data-operation="×">
+                ×
+            </button>
+
+
+            <button class="glass-button number">7</button>
+            <button class="glass-button number">8</button>
+            <button class="glass-button number">9</button>
+
+            <button class="glass-button operator" data-operation="-">
+                −
+            </button>
+
+
+            <button class="glass-button number">4</button>
+            <button class="glass-button number">5</button>
+            <button class="glass-button number">6</button>
+
+            <button class="glass-button operator" data-operation="+">
+                +
+            </button>
+
+
+            <button class="glass-button number">1</button>
+            <button class="glass-button number">2</button>
+            <button class="glass-button number">3</button>
+
+            <button class="glass-button equals" id="equals">
+                =
+            </button>
+
+
+            <button class="glass-button number zero">
+                0
+            </button>
+
+            <button class="glass-button number" id="decimal">
+                .
+            </button>
+
+        </div>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
